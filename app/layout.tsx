@@ -1,11 +1,8 @@
-"use client";
-
 import "./globals.css";
 import type { Metadata } from "next";
-import { Open_Sans, Raleway } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
-const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,13 +16,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <style jsx global>
-        {`
-          .raleway {
-            font-family: ${raleway.style.fontFamily};
-          }
-        `}
-      </style>
       <body className={openSans.className}>{children}</body>
     </html>
   );
