@@ -14,7 +14,7 @@ const Banner = () => {
           }
         `}
       </style>
-      <div className="flex rounded-[9px] w-full h-[45px] relative bg-[#E5E5E7] pl-[14px]">
+      <div className="flex rounded-[9px] w-full h-[45px] relative bg-[#E5E5E7] pl-[14px] mb-[20px]">
         <div className="w-full h-full flex items-center">
           punk heart, gothic
         </div>

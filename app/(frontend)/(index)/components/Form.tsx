@@ -1,7 +1,7 @@
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
+import PenIcon from "../../icons/PenIcon";
 import Button from "./formui/Button";
 import Input from "./formui/Input";
-import { FiEdit } from "@react-icons/all-files/fi/FiEdit";
 
 const Form = () => {
   const { register, handleSubmit } = useForm({
@@ -28,7 +28,7 @@ const Form = () => {
         }}
       />
       <Button type="submit" className="absolute right-0 top-0 h-full w-[53px]">
-        <FiEdit />
+        <PenIcon />
       </Button>
     </form>
   );
