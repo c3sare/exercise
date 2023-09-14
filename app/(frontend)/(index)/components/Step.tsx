@@ -9,11 +9,18 @@ type StepProps = {
 const Step: React.FC<StepProps> = ({ title, active, step }) => {
   const activeBgColor = active ? "bg-[#CE2B28]" : "bg-[#E5E5E7]";
   const activeTextColor = active ? "text-white" : "text-[#9C9C9C]";
+  const afterActiveBgColor = active
+    ? "after:bg-[#CE2B28]"
+    : "after:bg-[#E5E5E7]";
 
   return (
     <div className="w-full">
       <div
-        className={clsx("h-[4px] w-full rounded-lg relative", activeBgColor)}
+        className={clsx(
+          "h-[4px] w-full rounded-lg relative after:absolute after:top-0 after:left-[calc(100%_-_3px)] after:h-full after:rounded-full after:w-2 last:after:hidden",
+          activeBgColor,
+          afterActiveBgColor
+        )}
       >
         <div
           className={clsx(

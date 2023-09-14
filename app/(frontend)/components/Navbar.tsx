@@ -1,27 +1,27 @@
 import MenuButton from "./navbar/MenuButton";
-import { GiHamburgerMenu } from "@react-icons/all-files/gi/GiHamburgerMenu";
-import { GoHeart } from "@react-icons/all-files/go/GoHeart";
-import { CgShoppingCart } from "@react-icons/all-files/cg/CgShoppingCart";
-import { BiUser } from "@react-icons/all-files/bi/BiUser";
+import MenuIcon from "@/app/(frontend)/icons/MenuIcon";
+import HeartIcon from "@/app/(frontend)/icons/HeartIcon";
+import CartIcon from "@/app/(frontend)/icons/CartIcon";
+import UserIcon from "@/app/(frontend)/icons/UserIcon";
 
 const Navbar = () => {
   return (
-    <div className="w-full flex items-center justify-between my-4 px-2">
+    <header className="w-full flex items-center justify-between pt-[38px] px-[20px]">
       <MenuButton>
-        <GiHamburgerMenu />
+        <MenuIcon />
       </MenuButton>
-      <div className="flex items-center">
+      <nav className="flex items-center gap-[11px]">
         <MenuButton>
-          <GoHeart />
+          <HeartIcon />
         </MenuButton>
         <MenuButton>
-          <CgShoppingCart />
+          <CartIcon />
         </MenuButton>
         <MenuButton>
-          <BiUser />
+          <UserIcon />
         </MenuButton>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };
 
